@@ -1,0 +1,23 @@
+<body>
+    {{$hotels := .}}
+
+    {{range $hotels}}
+        <h1>{{.Name}}</h1>
+
+        <h2>Menu</h2>
+
+        {{range .Menu}}
+            {{.Meal}}
+            <ul>
+            {{range .Item}}
+                <li>
+                    <h4>{{.Name}}</h4>
+                    <h4>{{.Descrip}}</h4>
+                    <h4>{{.Price}}</h4>
+                </li>
+            {{end}}
+            </ul>
+        {{end}}
+    {{end}}
+
+</body>
