@@ -1,0 +1,20 @@
+{{template "header" .}}
+
+    <hr>
+
+
+        <h1>Welcome to the bar. What can I get you to drink?</h1>
+
+        {{if .}}
+
+        <ul>
+            <li>USER NAME {{ .Username}}</li>
+            <li>First {{ .First}}</li>
+            <li>Last {{ .Last}}</li>
+            <li>Password {{ .Password}}</li>
+        </ul>
+
+        {{end}}
+
+</body>
+</html>

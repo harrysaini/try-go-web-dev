@@ -1,0 +1,36 @@
+{{define "header"}}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<style>
+    .header{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid grey;
+    }
+
+    body{
+        padding-top: 50px;
+    }
+</style>
+
+<body>
+    
+    <div class="header">
+        <a href="/">Home</a>
+
+        {{if .}}
+            <a href="/logout">Logout</a>
+        {{end}}
+    </div>
+
+{{end}}
